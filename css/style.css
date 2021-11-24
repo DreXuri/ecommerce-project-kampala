@@ -1,0 +1,235 @@
+@import url("../css/font.css"); 
+
+html,body {
+  margin: 0%;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+:root {
+    /* -------color variable for esy usage from color.code.com-------- */
+  --txt-gray: #3f4954;
+  --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #B5651D;
+    --fblue:#79BAEC;
+    /* -------color variable for esy usage from webgradient.com-------- */
+    --kampala: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    --sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    /* -------font variable for esy usage-------- */
+    --abel:'abel', cursive;
+    --Anton:'anton',cursive;
+    --Abel:'josefin',cursive;
+    --Livvic:'livvic',cursive;
+    --Sttic:'sttic',cursive;
+    --Confort:'confort',cursive;
+}
+/* <-----------------global---------------------> */
+a {
+  text-decoration: none;
+  color: var(--txt-gray);
+}
+.flew-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+}
+h4{
+  font-size: 1.3rem;
+  font-family: var(--Sttic);
+  font-weight: lighter;
+}
+hr{
+  size: .3rem;
+  border: 0rem solid black;
+}
+button.btn{
+  border: none;
+  border-radius: 0.6rem;
+  height: 50px;
+  width: 200px;
+  background: var(--white);
+  color: black;
+  /* font-weight: bold; */
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* <-----------------global---------------------> */
+
+/* <---------nav bar...............> */
+.nav {
+  background: white;
+  padding: 0.2rem;
+  height: 0rem;
+  min-height: 8vh; 
+  overflow: hidden;
+  transition: height 1s ease-out;
+}
+nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 1rem;
+  display: block;
+  font-family: var(--Sttic);
+}
+nav .nav-items {
+  display: flex;
+  margin: 0;
+}
+nav .nav-menu {
+  justify-content: space-between;
+}
+nav .nav-items .nav-link{
+  padding: 1.6rem 1rem;
+  position: relative;
+  font-size: 1.1rem;
+  font-family: var(--carisom);
+}
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icon{
+ display: flex;
+ justify-content: flex-end;
+ padding: 1.7rem 0;   
+}
+.nav .toggle-collapse .toggle-icon i{
+  font-size: 1.4rem;
+  color: var(--txt-gray);
+}
+.collapse{
+  height: 30rem;
+}
+
+/* nav .nav-brand{
+    padding: 0.80rem 0.6rem;
+} */
+
+nav .nav-items .nav-link:hover{
+  background: var(--kampala);
+  border-radius: 3px;
+}
+nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+nav .social{
+  padding: 1.4rem 0rem;
+}
+
+/* nav .social i{
+  padding: 0rem 0.2rem;
+
+} */
+nav .nav-menu .social {
+  padding: 0.4rem 0.5rem;
+  word-spacing: 0.5rem;
+}
+nav .social i:hover {
+color: #79BAEC;
+}
+nav .social i.fa-instagram:hover {
+color: red;
+}
+nav .social i.fa-whatsapp:hover {
+color: green;
+}
+/* <---------nav bar...............> */
+
+/* <---------main content...............> */
+/* <---------site title...............> */
+main .site-title{
+  background: url('../images/bac.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+  /* align-items: center; */
+  /* margin: 10rem; */
+}
+main .site-title .site-background {
+  padding-top: 6rem;
+  text-align: center;
+  color: var(--white);
+}
+main .site-title h1 h4{ 
+  margin: .3rem;
+}
+main .site-title .btn{
+  margin: 1.4rem ;
+  padding: 0.2rem;
+  
+}
+main .site-title .btn:hover{
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+}
+
+/* <---------site title...............> */
+/* <---------main content...............> */
+/* <--------blog content...............> */
+main .blog{ 
+  background: url('../images/backw.png');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: left;
+  height: 100vh;
+  width: 100%;
+  /* opacity: 10px; */
+  /* margin-top: 1.5rem; */
+}
+main .blog .blog-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3rem 2.8rem;
+  width: 80%;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* main .blog .blog-post {
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+} */
+/* main .blog-post .blog-title{
+  padding: 1.1rem 0.9rem;
+/* } */
+main .blog-title .btn-blog{
+  margin: 0.5rem ;
+  padding: 0.7rem .2rem;
+  background: var(--sunset);
+  width: 5rem;
+  text-align: center;
+}
+main .blog-title span{ 
+    display: block;
+  margin-top: 1rem;
+  font-family: var(--Livvic);
+}
+/* <---------responsive for less or eaual to 750px...............> */
+@media only screen and (max-width:750px){
+    .nav .nav-menu,.nav .nav-items{flex-direction: column;}
+    .nav .toggle-collapse{ display:initial;}
+}
+/* <---------responsive for less or eaual to 750px...............> */
+

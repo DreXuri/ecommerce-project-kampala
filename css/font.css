@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: abel;
+    src: url('../font/abel/Abel-Regular.ttf');
+}
+@font-face {
+    font-family: playfair;
+    src: url('../font/playfair/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: carisom;
+    src: url('../font/crimson/CrimsonText-Regular.ttf');
+}
+@font-face {
+    font-family: carisom-b;
+    src: url('../font/crimson/CrimsonText-SemiBold.ttf');
+}
+@font-face {
+    font-family: anton;
+    src: url('../font/anton/Anton-Regular.ttf');
+}
+@font-face {
+    font-family: livvic;
+    src: url('../font/livvic/Livvic-Regular.ttf');
+}
+@font-face {
+    font-family: josefin;
+    src: url('../font/josefin/JosefinSans-Italic-VariableFont_wght\(2\).ttf');
+}
+@font-face {
+    font-family: sttic;
+    src: url('../font/static/LexendDeca-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: confort;
+    src: url('../font/confota/Comfortaa-VariableFont_wght.ttf');
+}
